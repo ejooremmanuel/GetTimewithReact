@@ -6,6 +6,7 @@ function App() {
   let getTime = () => {
     timeChange(new Date().toLocaleTimeString());
   };
+  setInterval(getTime, 1000);
   return (
     <div className="container">
       <h1>{newtime}</h1>
